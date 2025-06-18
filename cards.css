@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #021526;
+}
+p {
+  color: #E2E2B6;
+  background-color: #03346E;
+  width: fit-content;
+  font-size: 30px;
+  padding: 8px 20px 20px 20px;
+  margin: 0px auto;
+  border-radius: 0 0 20px 20px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+p:hover {
+  padding: 100px 20px 20px 20px;
+
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+
+}
+.container .card {
+  width: 450px;
+  height: 500px;
+  background-color: #6eabdaf7;
+  border-radius: 20px;
+  transition: 0.3s;
+  position: relative;
+  padding: 20px;
+}
+.container .card:hover {
+  box-shadow: #6EACDA 0px 0px 50px -20px;
+  transform: rotate(0.8deg);
+}
+.container .card .img {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  /* From https://css.glass */
+  background: rgba(226, 226, 182, 0.72);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.4px);
+  -webkit-backdrop-filter: blur(11.4px);
+  border: 1px solid rgba(226, 226, 182, 0.56);
+  margin-bottom: 30px;
+}
+.container .card .img img {
+  width: 200px;
+  height: 200px;
+}
+.container .card .buy{
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-around;
+}
+.container .card .buy span:first-child{
+  background-color: #03346E;
+  padding: 10px 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+.container .card .buy span {
+  padding: 10px 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: white;
+  color: #021526;
+}
+
+@media (max-width: 960px) {
+  .container .card {
+    width: 250px;
+    height: 400px;
+  }
+  .container .card .title {
+    font-size: 16px;
+  }
+  .container .card .img img {
+  width: 100px;
+  height: 100px;
+  } 
+  .container .card .buy span {
+  padding: 6px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.container .card .buy span:first-child{
+  padding:9px 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+.container .card .buy{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+}
